@@ -27,3 +27,4 @@ The present workflow is composed by the following unique components (Note that s
 ## Inputs
 
 - `--download_reads_1.accessions`: Accession file CSV file with a label in the first column and the accession number in the second column.
+- `--download_reads_2.accessions`: Accession file CSV file with a label in the first column and the accession number in the second column.
