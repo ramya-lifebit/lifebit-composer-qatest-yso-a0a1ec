@@ -32,9 +32,18 @@ The present workflow is composed by the following unique components (Note that s
 **Parameters**: 0\
 **Authors**: 
 
+### lifebitai_test_python
+
+**Description**: A mock python script.\
+**Inputs**: 1\
+**Outputs**: 0\
+**Parameters**: 0\
+**Authors**: 
+
 ## Inputs
 
 - `--download_reads_1.accessions`: Accession file CSV file with a label in the first column and the accession number in the second column.
 - `--download_reads_2.accessions`: Accession file CSV file with a label in the first column and the accession number in the second column.
 - `--test_r_1.accessions`: Accession file CSV file with a label in the first column and the accession number in the second column.
 - `--download_reads_3.accessions`: Accession file CSV file with a label in the first column and the accession number in the second column.
+- `--test_python_1.accessions`: Accession file CSV file with a label in the first column and the accession number in the second column.

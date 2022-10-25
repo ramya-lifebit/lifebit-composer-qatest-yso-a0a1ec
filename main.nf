@@ -5,15 +5,18 @@ include { fastqc_1 } from './modules/fastqc_1/module.nf'
 include { download_reads_2 } from './modules/download_reads_2/module.nf'
 include { test_r_1 } from './modules/test_r_1/module.nf'
 include { download_reads_3 } from './modules/download_reads_3/module.nf'
+include { test_python_1 } from './modules/test_python_1/module.nf'
 
 workflow {
 input1 = Channel.fromPath(params.download_reads_1.accessions).splitCsv()
 input2 = Channel.fromPath(params.download_reads_2.accessions).splitCsv()
 input3 = Channel.fromPath(params.test_r_1.accessions).splitCsv()
 input4 = Channel.fromPath(params.download_reads_3.accessions).splitCsv()
+input5 = Channel.fromPath(params.test_python_1.accessions).splitCsv()
 download_reads_1(input1)
 download_reads_2(input2)
 test_r_1(input3)
 download_reads_3(input4)
+test_python_1(input5)
 fastqc_1(download_reads_1.out.output1)
 }
